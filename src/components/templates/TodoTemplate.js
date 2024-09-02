@@ -8,7 +8,8 @@ import { getTodos, saveTodos } from '@/utils/storage'
 export default function TodoTemplate() {
   // TODO一覧をローカルストレージから取得
   // todosに値が追加されたら再描画させたいのでStateとして扱う
-  const [todos, setTodos] = useState(getTodos())
+  const initialState = getTodos()
+  const [todos, setTodos] = useState(initialState)
 
   // 追加処理
   // 引き数に新規TODOを受け取る

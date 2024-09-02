@@ -31,6 +31,7 @@ export default function TodoForm({ addTodo }) {
   return (
     <div>
       <Input
+        type="text"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         placeholder="TODO内容"
